@@ -1,9 +1,12 @@
 
-
-
 *, *:before, *:after {
   box-sizing: border-box;
 }
+
+@media screen and (min-width: 425px){
+
+
+
 
 body {
   background-color: #eee;
@@ -15,13 +18,39 @@ body {
   width: 100%;
 }
 
+.preview {
+  max-width: 100%;
+    height: auto;
+
+}
+
+.baku{
+  background-image: url("../images/baku.jpg");
+}
+
+.london{
+  background-image: url("../images/london.png");
+
+}
+
+.Madrid{
+  background-image: url("../images/madrid.jpg");
+
+}
+
+.rome{
+  background-image: url("../images/rome.jpg");
+
+}
+
+
 h1 {
   padding-left: 25%;
   font-size: 2.5em;
   margin: 0;
 }
 
-.h2 {
+h2 {
     position: relative;
     top: 50px;
     left: 25px;
@@ -30,14 +59,9 @@ h1 {
 
 
 
-@media screen and (min-width: 425px){
-  h1, .h2 {
-    font-size: .75em;
-  }
 }
 
-
-@media screen and (min-width: 575px){
+@media screen asnd (min-width: 575px){
    div {
     font-size: 1.25em;
     margin: 1%;
