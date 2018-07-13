@@ -1,11 +1,6 @@
-
 *, *:before, *:after {
-  box-sizing: border-box;
-}
-
-@media screen and (min-width: 425px){
-
-
+    box-sizing: border-box;
+  }
 
 
 body {
@@ -14,33 +9,42 @@ body {
   font-family: courier;
 }
 
+.content {
+
+}
+
 .container {
-  width: 100%;
 }
 
 .preview {
-  max-width: 100%;
-    height: auto;
+  width: 480px;
+  height: 480px;
 
 }
 
 .baku{
   background-image: url("../images/baku.jpg");
+  background-size: 480px auto;
+  background-repeat: no-repeat;
+
 }
 
 .london{
   background-image: url("../images/london.png");
-
+  background-size: 480px auto;
+  background-repeat: no-repeat;
 }
 
 .Madrid{
   background-image: url("../images/madrid.jpg");
-
+  background-size: 480px auto;
+  background-repeat: no-repeat;
 }
 
 .rome{
   background-image: url("../images/rome.jpg");
-
+  background-size: 480px auto;
+  background-repeat: no-repeat;
 }
 
 
@@ -59,14 +63,16 @@ h2 {
 
 
 
-}
+@media screen and (min-width: 480px){
 
-@media screen asnd (min-width: 575px){
-   div {
-    font-size: 1.25em;
-    margin: 1%;
-    width: 48%;
+@media screen and (min-width: 575px){
+     div {
+      margin: 1%;
+      width: 48%;
+    }
+
+
   }
-}
+
 
 }
