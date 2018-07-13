@@ -3,47 +3,56 @@
   }
 
 
+
 body {
   background-color: #eee;
   font-size: 10px;
   font-family: courier;
 }
 
-.content {
-
-}
 
 .container {
+  width:100%;
+  /*
+  min-width:420px;
+  max-width:480px; ????? */
 }
+
+article {
+  column-count: 2;
+  column-width: 240px;
+}
+/*image overflowing to top of page? article in wrong spot? make a nav bar?*/
 
 .preview {
   width: 480px;
-  height: 480px;
+  height: 300px;
 
 }
 
+
 .baku{
   background-image: url("../images/baku.jpg");
-  background-size: 480px auto;
+  background-size: 480px 300px;
   background-repeat: no-repeat;
 
 }
 
 .london{
   background-image: url("../images/london.png");
-  background-size: 480px auto;
+  background-size: 480px 300px;
   background-repeat: no-repeat;
 }
 
-.Madrid{
+.madrid{
   background-image: url("../images/madrid.jpg");
-  background-size: 480px auto;
+  background-size: 480px 300px;
   background-repeat: no-repeat;
 }
 
 .rome{
   background-image: url("../images/rome.jpg");
-  background-size: 480px auto;
+  background-size: 480px 300px;
   background-repeat: no-repeat;
 }
 
@@ -63,16 +72,51 @@ h2 {
 
 
 
-@media screen and (min-width: 480px){
+@media screen and (max-width: 480px){
 
-@media screen and (min-width: 575px){
+
+  /* ???
+  body, .container, .preview, h1, h2 {
+    /*width:100% 480px??
+    min-width: 420px;
+    max-width: 480px;??? */
+
+    }
+
+@media screen and (min-width: 480px){
      div {
       margin: 1%;
       width: 48%;
+
     }
 
 
+
+
   }
+
+
+
+  /* testing following parent/img method, added html too,
+  probably not recommended
+  .parent {
+    width: 480px;
+    height: 300px;
+  }
+
+  img {
+    display: block;
+    width: 480px;
+    height: 300px;
+  }
+
+  .content {
+
+
+  <div class="parent">
+  <img width="480" height="300" src="images/baku.jpg">
+
+  }*/
 
 
 }
