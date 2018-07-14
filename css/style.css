@@ -2,23 +2,16 @@
     box-sizing: border-box;
   }
 
-
-
 body {
   background-color: #eee;
   font-size: 10px;
-  font-family: courier;
+  font-family: sans-serif;
 }
-
 
 .container {
   width:100%;
-  /*
-  min-width:420px;
-  max-width:480px; ????? */
-}
 
-/*image overflowing to top of page? article in wrong spot? make a nav bar?*/
+}
 
 .preview {
   width: 480px;
@@ -26,7 +19,6 @@ body {
   float: left;
 
 }
-
 
 .baku{
   background-image: url("../images/baku.jpg");
@@ -60,22 +52,14 @@ h1 {
 
 h2 {
     position: relative;
-    top: 500px;
+    top: 10%;
     left: 25px;
-    font-size: 3em;
+    font-size: 2em;
 
 }
 
-
-
 @media screen and (max-width: 480px){
 
-
-  /* ???
-  body, .container, .preview, h1, h2 {
-    /*width:100% 480px??
-    min-width: 420px;
-    max-width: 480px;??? */
 
     }
 
@@ -95,29 +79,6 @@ h2 {
 
 
   }
-
-
-
-  /* testing following parent/img method, added html too,
-  probably not recommended
-  .parent {
-    width: 480px;
-    height: 300px;
-  }
-
-  img {
-    display: block;
-    width: 480px;
-    height: 300px;
-  }
-
-  .content {
-
-
-  <div class="parent">
-  <img width="480" height="300" src="images/baku.jpg">
-
-  }*/
 
 
 }
