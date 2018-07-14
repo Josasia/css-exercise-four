@@ -18,42 +18,37 @@ body {
   max-width:480px; ????? */
 }
 
-article {
-  column-count: 2;
-  column-width: 240px;
-}
 /*image overflowing to top of page? article in wrong spot? make a nav bar?*/
 
 .preview {
   width: 480px;
   height: 300px;
+  float: left;
 
 }
 
 
 .baku{
   background-image: url("../images/baku.jpg");
-  background-size: 480px 300px;
   background-repeat: no-repeat;
+  background-position: left;
 
 }
 
 .london{
   background-image: url("../images/london.png");
-  background-size: 480px 300px;
   background-repeat: no-repeat;
+  background-position: right;
 }
 
 .madrid{
   background-image: url("../images/madrid.jpg");
-  background-size: 480px 300px;
-  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .rome{
   background-image: url("../images/rome.jpg");
-  background-size: 480px 300px;
-  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
@@ -65,9 +60,10 @@ h1 {
 
 h2 {
     position: relative;
-    top: 50px;
+    top: 500px;
     left: 25px;
     font-size: 3em;
+
 }
 
 
@@ -83,14 +79,19 @@ h2 {
 
     }
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 480px) and (max-width: 991px){
      div {
       margin: 1%;
       width: 48%;
 
     }
 
+@media screen and (min-width: 991px){
+         div {
+          margin: 1%;
+          width: 25%;
 
+        }
 
 
   }
